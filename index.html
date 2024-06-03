@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/global-style.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="logo"><img src="images/logo.svg" alt="Logo Spliter"></div>
+
+  <section class="main">
+    <div class="main__bill">
+      <h2>Bill</h2>
+      <div class="bill__input input-box">
+        <img src="images/icon-dollar.svg" alt="Icon dollar">
+        <input type="text" id="bill" required value="0">
+      </div>
+    </div>
+
+    <div class="main__tip">
+      <h2>Select Tip %</h2>
+      <ul class="tips-container">
+        <li class="tip-item">5%</li>
+        <li class="tip-item">10%</li>
+        <li class="tip-item">15%</li>
+        <li class="tip-item">25%</li>
+        <li class="tip-item">50%</li>
+        <li class="tip-item"><input type="text" id="tip-custom"></li>
+
+      </ul>
+    </div>
+
+    <div class="main__people">
+      <h2>Number of People</h2>
+      <div class="people__input input-box">
+        <img src="images/icon-person.svg" alt="Icon person">
+        <input type="text" id="people" required value="0">
+      </div>
+    </div>
+  </section>
+
+  
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Malu Araujo</a>.
+  </div>
+</body>
+</html>

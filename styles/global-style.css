@@ -1,0 +1,20 @@
+:root {
+    --background-green: #C5E4E7;
+    --dark-green: #00474B;
+    --white: #FFFFFF;
+    --main-font: "Space Mono";
+    --main-font-color: #5E7A7D;
+    --light-details: #F3F9FA;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 16px;
+    background-color: var(--background-green);
+}
+
+h2 {
+    color: var(--main-font-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,40 @@
+.logo {
+   display: flex;
+   justify-content: center;
+   padding: 3.1rem 9rem 2.5rem 9rem;
+}
+
+.main {
+    background-color: var(--white);
+    border-radius: 25px 25px 0 0;
+    padding: 2rem;
+}
+
+.main__bill, .main__tip{
+    margin-bottom: 2rem;
+}
+
+.input-box{
+    background-color: var(--light-details);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.3rem;
+    border-radius: 5px;
+}
+
+.tips-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.tip-item{
+    background-color: var(--dark-green);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0.375rem 1rem;
+    font-size: 24px;
+    font-weight: 700;
+}
