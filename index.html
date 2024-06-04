@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/global-style.css">
   <link rel="stylesheet" href="styles/main.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/script.js" defer></script>
 </head>
 <body>
   <div class="logo"><img src="images/logo.svg" alt="Logo Spliter"></div>
@@ -26,19 +29,19 @@
       <h2>Bill</h2>
       <div class="bill__input input-box">
         <img src="images/icon-dollar.svg" alt="Icon dollar">
-        <input type="text" id="bill" required value="0">
+        <input type="text" id="bill" required value="0" maxlength="10">
       </div>
     </div>
 
     <div class="main__tip">
       <h2>Select Tip %</h2>
       <ul class="tips-container">
-        <li class="tip-item">5%</li>
-        <li class="tip-item">10%</li>
-        <li class="tip-item">15%</li>
-        <li class="tip-item">25%</li>
-        <li class="tip-item">50%</li>
-        <li class="tip-item"><input type="text" id="tip-custom"></li>
+        <li class="tip-item tip-item-default" value="5">5%</li>
+        <li class="tip-item tip-item-default" value="10">10%</li>
+        <li class="tip-item tip-item-default" value="15">15%</li>
+        <li class="tip-item tip-item-default" value="25">25%</li>
+        <li class="tip-item tip-item-default" value="50">50%</li>
+        <li class="tip-item tip-item-custom"><input type="text" id="tip-custom" placeholder="Custom" maxlength="2"></li>
 
       </ul>
     </div>
@@ -47,20 +50,26 @@
       <h2>Number of People</h2>
       <div class="people__input input-box">
         <img src="images/icon-person.svg" alt="Icon person">
-        <input type="text" id="people" required value="0">
+        <input type="text" id="people" required value="1" maxlength="3">
       </div>
     </div>
+
+    <div class="main__result">
+      <div class="result__box">
+        <h3>Tip Amount</h3>
+        <p>/ person</p>
+        <h4 id="tip-per-person">$</h4>
+      </div>
+
+      <div class="result__box">
+        <h3>Total</h3>
+        <p>/ person</p>
+        <h4 id="total-per-person">$</h4>
+      </div>
+
+      <button class="reset">RESET</button>
+    </div>
   </section>
-
-  
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
